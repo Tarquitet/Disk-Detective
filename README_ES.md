@@ -3,6 +3,8 @@
 [![Language](https://img.shields.io/badge/Lang-English-red?style=flat-square)](README.md)
 [![Python](https://img.shields.io/badge/Python-3.x-yellow.svg?style=flat-square)](https://www.python.org/)
 
+![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)
+
 Una herramienta ligera y **autocontenida en Python** diseñada para visualizar el uso del disco y listar el software instalado en Windows.
 
 Su enfoque es la **portabilidad**: el script detecta automáticamente si faltan librerías y las instala por sí mismo. Ideal para llevar en una USB o diagnósticos rápidos.
