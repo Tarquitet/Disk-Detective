@@ -1,43 +1,41 @@
-# 🕵️ Disk Detective (Portable Cleaner)
+# 🕵️ Disk Detective (Limpiador Portable)
 
-[![Language](https://img.shields.io/badge/Lang-Español-blue?style=flat-square)](README_ES.md)
+[![Language](https://img.shields.io/badge/Lang-English-red?style=flat-square)](README.md)
 [![Python](https://img.shields.io/badge/Python-3.x-yellow.svg?style=flat-square)](https://www.python.org/)
-[![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](LICENSE)
 
-A lightweight, **self-contained Python tool** designed to visualize disk usage and list installed software on Windows.
+Una herramienta ligera y **autocontenida en Python** diseñada para visualizar el uso del disco y listar el software instalado en Windows.
 
-It focuses on **portability**: the script automatically checks for and installs its own dependencies (`ttkbootstrap`, `humanize`) upon the first run, making it perfect for USB drives or quick diagnostics without manual environment setup.
+Su enfoque es la **portabilidad**: el script detecta automáticamente si faltan librerías y las instala por sí mismo. Ideal para llevar en una USB o diagnósticos rápidos.
 
-## ✨ Key Features
+## ✨ Características Principales
 
-* **📦 Zero-Config Portability:** Just run the script. It auto-detects missing libraries and installs them via `pip` internally.
-* **📂 Folder Weight Visualizer:**
-    * Scans any directory to identify heavy subfolders.
-    * Displays file count and human-readable sizes (GB, MB).
-* **🛡️ Smart App Listing:**
-    * Lists installed programs via Windows Registry.
-    * **Heuristic Detection:** Automatically flags system dependencies (Visual C++, .NET, Drivers) in **Orange** to prevent accidental uninstallation.
-    * **Safety First:** It does *not* uninstall programs directly. It acts as an investigator tool to be used alongside uninstallers like [BCUninstaller](https://www.bcuninstaller.com/).
+* **📦 Portabilidad Zero-Config:** Solo ejecuta el script. Si faltan dependencias, él mismo las descarga.
+* **📂 Visualizador de Peso de Carpetas:**
+    * Escanea cualquier directorio para identificar subcarpetas pesadas.
+    * Muestra conteo de archivos y tamaños legibles (GB, MB).
+* **🛡️ Listado Inteligente de Apps:**
+    * Lista programas instalados consultando el Registro de Windows.
+    * **Detección Heurística:** Marca automáticamente las dependencias del sistema (Visual C++, .NET, Drivers) en color **Naranja** para evitar desinstalaciones accidentales.
+    * **Seguridad:** No desinstala programas directamente. Úsalo junto a desinstaladores como [BCUninstaller](https://www.bcuninstaller.com/).
 
-## 🛠️ Requirements
+## 🛠️ Requisitos
 
-* **OS:** Windows 10/11
-* **Runtime:** Python 3.6 or higher.
+* **Sistema Operativo:** Windows 10/11
+* **Runtime:** Python 3.6 o superior.
 
-## 🚀 Usage
+## 🚀 Cómo usar
 
-1.  Download the `cleaner.py` file.
-2.  Open a terminal (CMD or PowerShell) in the folder.
-3.  Run the script:
+1.  Descarga el archivo `cleaner.py`.
+2.  Abre una terminal (CMD o PowerShell) en la carpeta.
+3.  Ejecuta el comando:
 
 ```bash
 python cleaner.py
 ```
+Nota: Ejecuta como Administrador para poder escanear carpetas del sistema.
+⚠️ Nota Importante sobre Librerías
 
-Note: Run as Administrator to scan system folders like "Program Files".
-⚠️ Important Note on Dependencies
+Windows no rastrea qué aplicación usa qué versión de "Visual C++" o ".NET". Esta herramienta resalta estas librerías para advertirte. No las borres a menos que sepas lo que haces.
+📄 Licencia
 
-Windows does not natively track which application uses which specific C++ Redistributable or .NET Framework. This tool detects and highlights these libraries to warn you. Do not delete highlighted libraries unless you are absolutely certain.
-📄 License
-
-This project is open-source and available under the MIT License.
+Este proyecto es de código abierto bajo la Licencia MIT.
