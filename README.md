@@ -8,27 +8,29 @@ A lightweight, **self-contained Python tool** designed to visualize disk usage a
 
 It focuses on **portability**: the script automatically checks for and installs its own dependencies (`ttkbootstrap`, `humanize`) upon the first run, making it perfect for USB drives or quick diagnostics without manual environment setup.
 
+![1771192504621](images/README/1771192504621.png)
+
 ## ✨ Key Features
 
-* **📦 Zero-Config Portability:** Just run the script. It auto-detects missing libraries and installs them via `pip` internally.
-* **📂 Folder Weight Visualizer:**
-    * Scans any directory to identify heavy subfolders.
-    * Displays file count and human-readable sizes (GB, MB).
-* **🛡️ Smart App Listing:**
-    * Lists installed programs via Windows Registry.
-    * **Heuristic Detection:** Automatically flags system dependencies (Visual C++, .NET, Drivers) in **Orange** to prevent accidental uninstallation.
-    * **Safety First:** It does *not* uninstall programs directly. It acts as an investigator tool to be used alongside uninstallers like [BCUninstaller](https://www.bcuninstaller.com/).
+- **📦 Zero-Config Portability:** Just run the script. It auto-detects missing libraries and installs them via `pip` internally.
+- **📂 Folder Weight Visualizer:**
+  - Scans any directory to identify heavy subfolders.
+  - Displays file count and human-readable sizes (GB, MB).
+- **🛡️ Smart App Listing:**
+  - Lists installed programs via Windows Registry.
+  - **Heuristic Detection:** Automatically flags system dependencies (Visual C++, .NET, Drivers) in **Orange** to prevent accidental uninstallation.
+  - **Safety First:** It does _not_ uninstall programs directly. It acts as an investigator tool to be used alongside uninstallers like [BCUninstaller](https://www.bcuninstaller.com/).
 
 ## 🛠️ Requirements
 
-* **OS:** Windows 10/11
-* **Runtime:** Python 3.6 or higher.
+- **OS:** Windows 10/11
+- **Runtime:** Python 3.6 or higher.
 
 ## 🚀 Usage
 
-1.  Download the `cleaner.py` file.
-2.  Open a terminal (CMD or PowerShell) in the folder.
-3.  Run the script:
+1. Download the `cleaner.py` file.
+2. Open a terminal (CMD or PowerShell) in the folder.
+3. Run the script:
 
 ```bash
 python cleaner.py
